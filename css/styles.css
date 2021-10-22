@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**** Navigation ****/
+
+#navbar {
+  color: #32608d;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid grey;
+}
+
+#navbar .nav-links {
+  display: flex;
+  list-style: none;
+  font-family: "Nunito", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding-top: 8px;
+}
+
+#navbar .title-container {
+  display: flex;
+}
+
+#navbar .title-container p {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#navbar .medicine {
+  font-weight: bold;
+}
+
+#navbar .association {
+  letter-spacing: 3px;
+}
+
+#navbar .myLink {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #336a88;
+  border-bottom: 2px solid #fff;
+}
+
+#navbar .myLink:hover {
+  color: #4dc0b3;
+  transition: 0.3s ease-in;
+}
+
+#navbar .signIn {
+  color: #969696;
+}
+
+#navbar .myButton {
+  background-color: #4dc0b3;
+  color: white;
+  border-radius: 7px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+#navbar .myButton:hover {
+  background-color: #339c90;
+  color: white;
+}
+
+#navbar .nav-logo {
+  height: 65px;
+  width: 65px;
+}
+
+/*** Main Section ****/
+
+#main {
+  background-color: #0d2e47;
+  color: #fff;
+}
+
+.headers-container {
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-family: Montserrat, sans-serif;
+}
+
+.headers-container h1 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.main-header-container {
+  text-transform: uppercase;
+  line-height: 1.4em;
+}
+
+.subheader-container {
+  margin: auto;
+  width: 75%;
+}
+
+.subheader-container h3 {
+  margin-top: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/***** Free Guide Section *****/
+
+#intro-guide {
+  background-color: #f89c5c;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.guide-container {
+  padding: 20px 50px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+#intro-guide .guide-container h2 {
+  font-weight: 300;
+}
+
+.title {
+  display: inline-block;
+  width: 49%;
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+.description {
+  /** why did text go to bottom of div by default? **/
+  display: inline-block;
+  width: 49%;
+}
+
+.description p {
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.description .downloadGuideButton {
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 300;
+  display: block;
+  background-color: white;
+  text-decoration: none;
+  color: #f89c5c;
+  width: 120px;
+  height: 37px;
+  padding: 8px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+/***** About Section *****/
+.main-about-content {
+  padding: 70px 40px 40px 40px;
+}
+
+.main-about-content h2 {
+  color: #32608d;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 300;
+  line-height: 1.2em;
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+
+.main-about-content p {
+  text-align: justify;
+  color: #545454;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+
+/***** SANA section *****/
+
+#sana {
+  background-color: #1b4f5c;
+  color: white;
+}
+
+.sana-container {
+  padding: 50px 40px;
+}
+
+.sana-about {
+  display: inline-block;
+  width: 49%;
+}
+
+.sana-logo {
+  display: inline-block;
+  width: 49%;
+}
+
+.sana-about h2,
+p {
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 300;
+}
+
+.sana-about h2 {
+  font-size: 35px;
+  line-height: 1.2em;
+}
+
+.sana-about .sana-date {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px 0;
+}
+
+.sana-about p {
+  padding-bottom: 20px;
+}
+
+.sana-about .registerButton {
+  font-size: 16px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 300;
+  display: block;
+  background-color: white;
+  color: #1b4f5c;
+  text-decoration: none;
+  width: 120px;
+  height: 37px;
+  padding: 8px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+/** why does image go towards bottom of div by default? **/
+/** Not sure if this is best way of doing this & free guide section
+- looks very bad when minimising window **/
+.sana-logo .sana-img {
+  width: 100%;
+  position: relative;
+  bottom: 120px;
+}
+
+/** not sure how to do member organisations section
+
+-- Not sure how to structure it...should I use flexbox?
+ - Should I make a flex container, containing the text on the left
+   as one flex item, and the cards on the right as another flex item?
+
+-- It looks like each of those cards are flex containers - should I do this?
+
+-- The second row should be a bit more simple...but again looks as though the cards
+   themselves are flex containers which then contain flex items.
+
+**/
